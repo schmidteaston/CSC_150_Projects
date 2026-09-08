@@ -12,10 +12,12 @@ int main() {
 
     //find out how many hours the user worked
     cout << "How many hours did you work?\n";
+    cout << "Hours: ";
     cin >> hours;
 
     //find out the users hourly pay rate
     cout << "What is your hourly rate?\n";
+    cout << "Rate: ";
     cin >> rate;
 
     //calculate the users gross pay

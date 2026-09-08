@@ -1,26 +1,18 @@
 #include <iostream>
 using namespace std;
 
-// Define Colors
-#define RESET   "\033[0m"
-#define RED     "\033[31m"
-#define GREEN   "\033[32m"
-#define YELLOW  "\033[33m"
-#define BLUE    "\033[34m"
-
 // Define Variables
 int scores = 0, num, average;
 string grade;
 
 int main() {
     // Loop the cin function until 5 scores have benn entered
-    cout << YELLOW << "Please enter your scores: " << RESET << endl;
+    cout << "Please enter your scores: " << endl;
     for (int count = 1; count <=5; count++) {
         cout << "Score " << count << ": ";
         cin >> num;
         scores = scores + num;
     }
-
     average = scores / 5;
 
     if (average >= 90) {
@@ -39,7 +31,7 @@ int main() {
         grade = "F";
     }
 
-    cout << BLUE << "Your Average Score is " << average << "!" << RESET<< endl;
-    cout << GREEN << "Your Letter Grade is " << grade << "!" << RESET<< endl;
+        cout << "Your Average Score is " << average << "!" << endl;
+        cout << "Your Letter Grade is " << grade << "!" << endl;
     return 0;
 }

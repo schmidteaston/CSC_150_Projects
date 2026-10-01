@@ -4,11 +4,17 @@
 
 #include <iostream>
 #include <cmath>  // access to pow and sqrt
-#include <iomanip>
+#include <iomanip> // access to setw and setprecision
 using namespace std;
 
 int main() {
     static double triHeight, triBase, hypotenuse;
+    string name;
+
+    cout << "Please Enter your Name: ";
+    getline(cin, name);
+
+    cout << "Hello, " << name << "!" << endl;
 
     cout << "Enter the Height of the Triangle: ";
     cin >> triHeight;
@@ -22,9 +28,11 @@ int main() {
     // fixed causes precision to be decimal places instead of significant digits
     cout << fixed << setprecision(2);
     cout << "\nResults: " << endl;
-    cout << "Height: " << triHeight << endl;
-    cout << "Base: " << triBase << endl;
-    cout << "Hypotenuse: " << hypotenuse << endl;
+    cout << "---------------------" << endl;
+    cout << right;
+    cout << setw(12) << "Height: " << setw(12) << triHeight << endl;
+    cout << setw(12) << "Base: " << setw(12) << triBase << endl;
+    cout << setw(12) << "Hypotenuse: " << setw(12) << hypotenuse << endl;
 
     return 0;
 }

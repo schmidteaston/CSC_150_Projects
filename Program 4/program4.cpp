@@ -65,7 +65,7 @@ int main() {
             cout << "Please answer the following equation. " << endl
                  << "Round to 1 Decimal." << endl;
             problemAnswer = static_cast <double> (number1) / number2; // Keep the decimal value
-            problemAnswer = round(problemAnswer*10) / 10;              // Round to 1 decimal place
+            problemAnswer = round(problemAnswer*10) / 10;             // Round to 1 decimal place
             cout << setw (9) << right << number1 << endl
                  << setw (7) << right << " % " << number2 << endl
                  << setw (10) << right << " ------ " << endl;
